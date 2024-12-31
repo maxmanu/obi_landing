@@ -21,4 +21,8 @@ jobs:
           local-dir: ./ # Directorio local para subir (./ sube todo el proyecto)
           server-dir: ${{ secrets.FTP_PATH }}
           method: ftp # Cambia a 'sftp' si prefieres usar SFTP en lugar de FTP
-          git-ftp-args: --insecure
+          git-ftp-args: --auto-init --insecure
+          exclude: |
+            .git*  # Excluye archivos .git y otras configuraciones de control de versiones
+            .github  # Excluye la carpeta de workflows de GitHub Actions
+            node_modules
