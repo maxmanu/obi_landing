@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-color: #67D644;
+  --blue-color: #1CA3FD;
+  --purple-color: #996DF5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  height: 100vh;
+}
+
+.obi-logo {
+  max-width: 400px;
+}
+
+.card-pill {
+  width: 180px;
+  height: 330px;
+  border-radius: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 20px 25px;
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+.bg-purple {
+  background-color: var(--purple-color);
+}
+
+.pill-title {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.pill-text {
+  font-size: 1rem;
+  margin-bottom: auto;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  color: #252525;
+  font-weight: bold;
+  margin-left: 65px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 40px;
+  height: 4px;
+  background-color: #252525;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.social span {
+  font-weight: bold;
+}
+
+.social-links img {
+  width: 40px;
+}
+
+/*------------FORM ------------*/
+.modern-form {
+  --primary: #1CA3FD;
+  --primary-dark: #2563eb;
+  --primary-light: rgba(59, 130, 246, 0.1);
+  --success: #10b981;
+  --text-main: #1e293b;
+  --text-secondary: #64748b;
+  --bg-input: #f8fafc;
+
+  position: relative;
+  width: 400px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.05),
+    inset 0 0 0 1px rgba(148, 163, 184, 0.1);
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0 0 24px;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+.input-group {
+  margin-bottom: 16px;
+  display: block;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 36px;
+  font-size: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: var(--bg-input);
+  color: var(--text-main);
+  transition: all 0.2s ease;
+}
+
+textarea.form-input {
+  height: 100%;
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.eye-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.submit-button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.button-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.form-footer {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.login-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.login-link span {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* Hover & Focus States */
+.form-input:hover {
+  border-color: #cbd5e1;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: white;
+  box-shadow: 0 0 0 4px var(--primary-light);
+}
+
+.password-toggle:hover {
+  color: var(--primary);
+  transform: scale(1.1);
+}
+
+.submit-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow:
+    0 4px 12px rgba(59, 130, 246, 0.25),
+    0 2px 4px rgba(59, 130, 246, 0.15);
+}
+
+.submit-button:hover .button-glow {
+  transform: translateX(100%);
+}
+
+.login-link:hover {
+  color: var(--text-main);
+}
+
+.login-link:hover span {
+  color: var(--primary-dark);
+}
+
+/* Active States */
+.submit-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.password-toggle:active {
+  transform: scale(0.9);
+}
+
+/* Validation States */
+/* .form-input:not(:placeholder-shown):valid {
+  border-color: var(--success);
+} */
+
+.form-input:not(:placeholder-shown):valid~.input-icon {
+  color: var(--success);
+}
+
+/* Animation */
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-4px);
+  }
+
+  75% {
+    transform: translateX(4px);
+  }
+}
+
+.form-input:not(:placeholder-shown):invalid {
+  border-color: #ef4444;
+  animation: shake 0.2s ease-in-out;
+}
+
+.form-input:not(:placeholder-shown):invalid~.input-icon {
+  color: #ef4444;
+}
+
+/*------------END FORM ------------*/
+
+
+/*------------LOGOS CAROUSEL ------------*/
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 5px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 85s slides infinite linear;
+}
+
+.logos:hover .logo_items {
+  animation-play-state: paused;
+}
+
+.logo_items img {
+  height: 100px;
+}
+
+/*------------END LOGOS CAROUSEL ------------*/
+
+
+@media (max-width: 991px) {
+  main {
+    padding: 20px 0;
+    height: 100%;
+  }
+
+  .col-right {
+    margin-top: 100px;
+  }
+
+  .modern-form {
+    width: 100%;
+  }
+
+  .section-title {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-pill {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 17px;
+    padding: 20px 35px;
+  }
+}
+
+@media (max-width: 480px) {}
