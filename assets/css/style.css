@@ -121,6 +121,20 @@ body {
   right: 18%;
 }
 
+.bg-servicios-decor {
+  background-image: url('../img/bg-servicios-decor.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-clientes-decor {
+  background-image: url('../img/bg-clientes-decor.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 @media (max-width: 1024px) {
   .bg-square {
     bottom: 6%;

@@ -99,7 +99,7 @@
       </div>
     </section>
     <!-- Service Cards Grid -->
-    <section id="services-section" class="pb-24 bg-background-obi-sky/40">
+    <section id="services-section" class="pb-24 bg-servicios-decor">
       <div class="pt-20 pb-10 container mx-auto px-6 lg:px-10">
         <!-- <h3 class="text-4xl font-extrabold text-[#111318] dark:text-white">SERVICIOS</h3> -->
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 border border-secondary/20 text-secondary text-lg font-bold uppercase tracking-widest w-fit">
@@ -126,7 +126,7 @@
       </div>
     </section>
     <!-- Recent Case Studies -->
-    <section id="solutions-section" class="relative py-24 dark:bg-gray-900/50">
+    <section id="solutions-section" class="relative py-24 dark:bg-gray-900/50 overflow-hidden">
       <img class="bg-square bg-square--solutions" src="assets/img/square_bg.svg" alt="banner-hero">
       <div class="container mx-auto px-6 lg:px-10">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -194,7 +194,7 @@
       </div>
     </section>
     <!-- CTA Section -->
-    <section id="clients-section" class="py-24 bg-background-obi-green/40 relative overflow-hidden">
+    <section id="clients-section" class="py-24 bg-clientes-decor relative overflow-hidden">
       <div class="pb-20 container mx-auto px-6 lg:px-10">
         <!-- <h3 class="text-4xl font-extrabold text-[#111318] dark:text-white">Clientes</h3> -->
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 border border-tertiary/20 text-tertiary-dark text-lg font-bold uppercase tracking-widest w-fit">

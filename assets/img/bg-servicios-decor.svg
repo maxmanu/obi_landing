@@ -1,0 +1,37 @@
+<svg width="1920" height="992" viewBox="0 0 1920 992" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.4" width="1920" height="992" fill="#89D0FF"/>
+<g style="mix-blend-mode:multiply">
+<mask id="mask0_2018_4" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="992">
+<rect opacity="0.4" width="1920" height="992" fill="#EBF3FE"/>
+</mask>
+<g mask="url(#mask0_2018_4)">
+<g style="mix-blend-mode:multiply">
+<circle cx="1595" cy="834" r="388" fill="#DAEBFF"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<circle cx="265" cy="212" r="373" fill="#DAEBFF"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<circle cx="1109.5" cy="991.5" r="172.5" fill="#DAEBFF"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<circle cx="1920" cy="513" r="201" fill="#DAEBFF"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<circle cx="1654" cy="142" r="83" fill="#DAEBFF"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<circle cx="1801.5" cy="27.5" r="197.5" fill="#DAEBFF"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<circle cx="1803.5" cy="210.5" r="52.5" fill="#DAEBFF"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<circle cx="100" cy="565" r="31" fill="#DAEBFF"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<circle cx="186.5" cy="1054.5" r="181.5" fill="#DAEBFF"/>
+</g>
+</g>
+</g>
+</svg>
