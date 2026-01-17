@@ -82,9 +82,9 @@
               Somos una consultora que acompaña a empresas y emprendedores <b>en cada etapa de su evolución tecnológica.</b> Creemos que una idea no está terminada hasta que genera un cambio real en su negocio.
             </p>
             <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl text-justify">
-              Nos integramos a su organización para entender sus desafíos desde adentro y <b>co-crear una hoja de ruta digital estratégica.</b> Nuestro compromiso es asegurar que cada inversión en tecnología esté validada y <b>genere un impacto real en su crecimiento.</b>
+              Nos integramos a su organización para entender sus desafíos desde adentro y <b>co-crear una hoja de ruta digital estratégica.</b>
             </p>
-            <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl text-justify">Nuestro compromiso es asegurar que cada inversión en tecnología esté validada y genere un impacto real en su crecimiento.</p>
+            <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl text-justify">Nuestro compromiso es asegurar que cada inversión en tecnología esté validada y <b>genere un impacto real en su crecimiento.</b></p>
             <div class="flex flex-wrap justify-center lg:justify-start gap-4">
               <a href="https://wa.me/51958624548?text=Hola.%20Me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n%20para%20realizar%20un%20diagn%C3%B3stico%20digital%20de%20mi%20empresa.%20%C2%BFC%C3%B3mo%20podemos%20empezar%3F" target="_blank" class="h-14 px-8 bg-primary text-white rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all flex items-center gap-2">
                 Contáctanos aquí
