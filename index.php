@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <link rel="icon" type="image/png" href="assets/img/obi-ico.png" />
-  <title>Obi Consulting - Innovative IT Solutions</title>
+  <title>Obi Consulting | Transformación Digital y Estrategia</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet" />
@@ -20,6 +20,7 @@
             "primary": "#996DF5",
             "secondary": "#1CA3FD",
             "tertiary": "#67D644",
+            "tertiary-dark": "#39AF13",
             "background-light": "#f6f6f8",
             "background-dark": "#101622",
             "background-obi-dark": "#272626",
@@ -76,13 +77,13 @@
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div class="flex flex-col gap-8 z-10">
             <img class="lg:max-w-xl max-w-full h-auto" src="assets/img/card_text_1.svg" alt="">
-            <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl">
+            <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl text-justify">
               Somos una consultora que acompaña a empresas y emprendedores <b>en cada etapa de su evolución tecnológica.</b> Creemos que una idea no está terminada hasta que genera un cambio real en su negocio.
             </p>
-            <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl">
+            <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl text-justify">
               Nos integramos a su organización para entender sus desafíos desde adentro y <b>co-crear una hoja de ruta digital estratégica.</b> Nuestro compromiso es asegurar que cada inversión en tecnología esté validada y <b>genere un impacto real en su crecimiento.</b>
             </p>
-            <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl">Nuestro compromiso es asegurar que cada inversión en tecnología esté validada y genere un impacto real en su crecimiento.</p>
+            <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl text-justify">Nuestro compromiso es asegurar que cada inversión en tecnología esté validada y genere un impacto real en su crecimiento.</p>
             <div class="flex flex-wrap justify-center lg:justify-start gap-4">
               <a href="https://wa.me/51958624548?text=Hola%20estoy%20interesado%20en%20sus%20servicios" target="_blank" class="h-14 px-8 bg-primary text-white rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all flex items-center gap-2">
                 Contáctanos aquí
@@ -99,10 +100,14 @@
     <!-- Service Cards Grid -->
     <section id="services-section" class="pb-24 bg-background-obi-sky/40">
       <div class="pt-20 pb-10 container mx-auto px-6 lg:px-10">
-        <h3 class="text-4xl font-extrabold text-[#111318] dark:text-white">SERVICIOS</h3>
+        <!-- <h3 class="text-4xl font-extrabold text-[#111318] dark:text-white">SERVICIOS</h3> -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 border border-secondary/20 text-secondary text-lg font-bold uppercase tracking-widest w-fit">
+          <span class="material-symbols-outlined text-lg">verified</span>
+          SERVICIOS
+        </div>
       </div>
       <div class="container mx-auto px-6 lg:px-10">
-        <div class="grid md:grid-cols-2 gap-10">
+        <div class="grid md:grid-cols-2 gap-14">
           <div class="group">
             <h4 class="text-3xl font-bold mb-[35px] underline">Consultoría Estratégica <br /> e Innovación</h4>
             <div class="grid sm:grid-cols-2 gap-2">
@@ -111,7 +116,7 @@
             </div>
           </div>
           <div class="group">
-            <p class="text-lg dark:text-gray-400 leading-relaxed mb-6">
+            <p class="text-lg dark:text-gray-400 leading-relaxed mb-6 text-justify max-w-[650px]">
               Antes de construir, validamos. Analizamos su empresa para asegurar que la tecnología responda a sus objetivos reales y no a simples suposiciones. Este servicio le permite identificar dónde la tecnología generará mayor valor, probando soluciones mediante prototipos antes de realizar la inversión final.
             </p>
             <img class="max-w-full h-auto" src="assets/img/card_text_2.svg" alt="">
@@ -128,56 +133,56 @@
           </div>
         </div>
         <div class="flex flex-col lg:flex-row items-start gap-10">
-          <ul class="space-y-4 lg:space-y-8 w-full lg:w-auto lg:min-w-[230px] lg:inline-block py-3 mt-0 lg:mt-6">
+          <ul class="vertical-line-list space-y-4 lg:space-y-8 w-full lg:w-auto lg:min-w-[230px] lg:inline-block py-3 mt-0 lg:mt-6">
             <li id="homeTab"
-              class="tab flex items-center text-sm text-slate-900 font-semibold bg-tertiary py-4 px-4 cursor-pointer transition-all">
-              <img class="max-w-full h-auto mr-3 bg-icon bg-icon-active" src="assets/img/desarrollo_icon.svg" alt="">
+              class="tab flex items-center text-sm text-slate-900 font-semibold bg-tertiary py-2 px-4 cursor-pointer transition-all">
+              <img class="max-w-[60px] h-auto mr-3 bg-icon bg-icon-active" src="assets/img/desarrollo_icon.svg" alt="">
               Desarrollo <br class="hidden lg:inline" /> Personalizado
             </li>
             <li id="settingTab"
-              class="tab flex items-center text-sm text-slate-900 font-medium py-4 px-4 cursor-pointer transition-all">
-              <img class="max-w-full h-auto mr-3 bg-icon" src="assets/img/ecommerce_icon.svg" alt="">
+              class="tab flex items-center text-sm text-slate-900 font-medium py-2 px-4 cursor-pointer transition-all">
+              <img class="max-w-[60px] h-auto mr-3 bg-icon" src="assets/img/ecommerce_icon.svg" alt="">
               Sitios Web e <br class="hidden lg:inline" />
               E-commerce
             </li>
             <li id="profileTab"
-              class="tab flex items-center text-sm text-slate-900 font-medium py-4 px-4 cursor-pointer transition-all">
-              <img class="max-w-full h-auto mr-3 bg-icon" src="assets/img/soporte_icon.svg" alt="">
+              class="tab flex items-center text-sm text-slate-900 font-medium py-2 px-4 cursor-pointer transition-all">
+              <img class="max-w-[60px] h-auto mr-3 bg-icon" src="assets/img/soporte_icon.svg" alt="">
               Acompañamiento <br class="hidden lg:inline" />
               y Soporte
             </li>
             <li id="inboxTab"
-              class="tab flex items-center text-sm text-slate-900 font-medium py-4 px-4 cursor-pointer transition-all">
-              <img class="max-w-full h-auto mr-3 bg-icon" src="assets/img/marketing_icon.svg" alt="">
+              class="tab flex items-center text-sm text-slate-900 font-medium py-2 px-4 cursor-pointer transition-all">
+              <img class="max-w-[60px] h-auto mr-3 bg-icon" src="assets/img/marketing_icon.svg" alt="">
               Marketing Digital
             </li>
           </ul>
 
           <div class="flex-1 w-full">
             <div id="homeContent" class="tab-content block mt-4">
-              <img class="max-w-full h-auto mx-auto" src="assets/img/desarrollo_banner_image.png" alt="banner-hero">
-              <p class="text-lg mt-4 leading-relaxed">
+              <img class="max-w-[full] h-auto mx-auto" src="assets/img/desarrollo_banner_image.png" alt="banner-hero">
+              <p class="text-lg mt-4 leading-relaxed max-w-[1030px] pe-0 lg:pe-[110px] mx-auto text-justify">
                 Creamos herramientas de software diseñadas exclusivamente para las reglas y procesos únicos de su empresa. Si su negocio tiene una forma especial de trabajar, nosotros nos encargamos.
               </p>
             </div>
 
             <div id="settingContent" class="tab-content hidden mt-4">
-              <img class="max-w-full h-auto mx-auto" src="assets/img/ecommerce_banner_image.png" alt="banner-hero">
-              <p class="text-lg mt-4 leading-relaxed">
+              <img class="max-w-[full] h-auto mx-auto" src="assets/img/ecommerce_banner_image.png" alt="banner-hero">
+              <p class="text-lg mt-4 leading-relaxed max-w-[1030px] pe-0 lg:pe-[110px] mx-auto text-justify">
                 Creamos páginas web y tiendas virtuales que no solo se ven bien, sino que son fáciles de usar y están enfocadas en atraer clientes y generar ventas.
               </p>
             </div>
 
             <div id="profileContent" class="tab-content hidden mt-4">
-              <img class="max-w-full h-auto mx-auto" src="assets/img/soporte_banner_image.png" alt="banner-hero">
-              <p class="text-lg mt-4 leading-relaxed">
-                No lo dejamos solo después del lanzamiento. Nos encargamos de que su tecnología siempre esté operativa, segura y actualizada, permitiéndole enfocarse en su negocio mientras nosotros cuidamos sus sistemas.
+              <img class="max-w-[full] h-auto mx-auto" src="assets/img/soporte_banner_image.png" alt="banner-hero">
+              <p class="text-lg mt-4 leading-relaxed max-w-[1030px] pe-0 lg:pe-[110px] mx-auto text-justify">
+                No lo dejamos solo después del lanzamiento. Nos encargamos de que sus plataformas digitales siempre estén operativas, seguras y actualizadas, dándole la tranquilidad de que su negocio nunca se detiene.
               </p>
             </div>
 
             <div id="inboxContent" class="tab-content hidden mt-4">
-              <img class="max-w-full h-auto mx-auto" src="assets/img/marketing_banner_image.png" alt="banner-hero">
-              <p class="text-lg mt-4 leading-relaxed">
+              <img class="max-w-[full] h-auto mx-auto" src="assets/img/marketing_banner_image.png" alt="banner-hero">
+              <p class="text-lg mt-4 leading-relaxed max-w-[1030px] pe-0 lg:pe-[110px] mx-auto text-justify">
                 Conectamos su marca con el público correcto a través de estrategias que atraen visitas y las convierten en oportunidades reales de negocio.
               </p>
             </div>
@@ -188,18 +193,29 @@
     </section>
     <!-- CTA Section -->
     <section id="clients-section" class="py-24 bg-background-obi-green/40 relative overflow-hidden">
-      <div class="pb-20 container mx-auto px-6 lg:px-10 text-center">
-        <h3 class="text-4xl font-extrabold text-[#111318] dark:text-white">Clientes</h3>
-        <p class="pt-6 max-w-xl mx-auto">Creamos herramientas de software diseñadas exclusivamente para las reglas y procesos únicos de su empresa.</p>
+      <div class="pb-20 container mx-auto px-6 lg:px-10">
+        <!-- <h3 class="text-4xl font-extrabold text-[#111318] dark:text-white">Clientes</h3> -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 border border-tertiary/20 text-tertiary-dark text-lg font-bold uppercase tracking-widest w-fit">
+          <span class="material-symbols-outlined text-lg">verified</span>
+          CLIENTES
+        </div>
+        <p class="pt-6">Empresas que confían en nuestra visión</p>
       </div>
       <div class="container mx-auto px-6 lg:px-10">
         <div class="relative overflow-hidden carousel-fade">
           <div class="flex items-center gap-12 lg:gap-24 animate-scroll" id="logoCarousel">
-            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">TECHNO</span>
-            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">GLOBAL</span>
-            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">QUANTUM</span>
-            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">STREAM</span>
-            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">NEXUS</span>
+            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">
+              <img class="w-32" src="assets/img/logo_uniendo_sonrisas.png" alt=""></span>
+            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">
+              <img class="w-32" src="assets/img/logo_peru_compras.png" alt=""></span>
+            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">
+              <img class="w-32" src="assets/img/logo_bizlinks.png" alt=""></span>
+            <span class="text-2xl font-black italic opacity-100 grayscale hover:grayscale-0 transition-all whitespace-nowrap">
+              <img class="w-32" src="assets/img/logo-hans.png" alt=""></span>
+            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">
+              <img class="w-32" src="assets/img/logo-novatronic.png" alt=""></span>
+            <span class="text-2xl font-black italic opacity-50 grayscale hover:grayscale-0 transition-all whitespace-nowrap">
+              <img class="w-32" src="assets/img/logo-rumi.svg" alt=""></span>
           </div>
         </div>
       </div>
@@ -208,48 +224,43 @@
   <!-- Footer -->
   <footer class="bg-background-obi-dark dark:bg-background-dark pt-20 pb-10">
     <div class="container mx-auto px-6 lg:px-10">
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-20">
+      <div class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-6 gap-12 mb-20">
         <div class="col-span-2">
           <div class="flex items-center gap-3 mb-6">
             <img class="w-32 max-w-full h-auto" src="assets/img/logo_obi_footer.svg" alt="logo">
           </div>
-          <p class="text-white max-w-xs mb-6">Leading the way in digital transformation and enterprise IT strategy. We turn technology into your competitive advantage.</p>
+          <p class="text-white max-w-xs mb-6">Dirección: Av. Caminos del Inka <br />
+            Cel. 97504678</p>
           <div class="flex gap-4">
-            <a class="size-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-white hover:text-primary hover:border-primary transition-all" href="#">
-              <span class="material-symbols-outlined text-lg">share</span>
+            <a href="https://www.facebook.com/obiconsulting/" rel="noopener noreferrer" target="_blank" class="size-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-white hover:text-primary hover:border-primary transition-all">
+              <img src="assets/img/facebook-icon.svg" alt="">
             </a>
-            <a class="size-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-white hover:text-primary hover:border-primary transition-all" href="#">
-              <span class="material-symbols-outlined text-lg">alternate_email</span>
+            <a href="https://www.instagram.com/obiconsulting/" rel="noopener noreferrer" target="_blank" class="size-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-white hover:text-primary hover:border-primary transition-all">
+              <img src="assets/img/instagram-icon.svg" alt="">
             </a>
+            <!-- <a href="https://www.linkedin.com/company/obi_consulting/" rel="noopener noreferrer" target="_blank" class="size-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-white hover:text-primary hover:border-primary transition-all">
+              <img src="assets/img/linkedin-icon.svg" alt="">
+            </a> -->
           </div>
           <p class="pt-8 text-gray-400 text-sm">© 2026 Obi Consulting. Todos los derechos reservados.</p>
         </div>
         <div>
+          <h5 class="font-bold  text-white mb-6">Nosotros</h5>
+        </div>
+        <div>
           <h5 class="font-bold  text-white mb-6">Innovación</h5>
-          <ul class="space-y-4 text-gray-500 text-sm">
-            <li><a class="hover:text-primary transition-colors" href="#">Cloud Solutions</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Cybersecurity</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Data Analytics</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">DevOps</a></li>
-          </ul>
         </div>
         <div>
           <h5 class="font-bold text-white mb-6">Soluciones Digitales</h5>
           <ul class="space-y-4 text-gray-500 text-sm">
-            <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Our Team</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#solutions-section">Desarrollo Personalizado</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#solutions-section">Sitios Web e E-commerce</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#solutions-section">Acompañamiento y Soporte</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#solutions-section">Marketing Digital</a></li>
           </ul>
         </div>
         <div>
-          <h5 class="font-bold text-white mb-6">Mapa</h5>
-          <ul class="space-y-4 text-gray-500 text-sm">
-            <li><a class="hover:text-primary transition-colors" href="#">Knowledge Base</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Security</a></li>
-          </ul>
+          <h5 class="font-bold text-white mb-6">Clientes</h5>
         </div>
       </div>
     </div>

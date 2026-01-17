@@ -7,6 +7,7 @@ body {
   padding: 10px;
   border-radius: 50%;
   transition: background 0.3s ease;
+  overflow: initial;
 }
 
 .bg-icon-active {
@@ -36,7 +37,7 @@ body {
 }
 
 /* Efecto de desvanecimiento en las esquinas */
-.carousel-fade::before,
+/* .carousel-fade::before,
 .carousel-fade::after {
   content: '';
   position: absolute;
@@ -56,7 +57,7 @@ body {
 .carousel-fade::after {
   right: 0;
   background: linear-gradient(to right, rgb(166 255 139 / 0.1), rgb(166 255 139 / 0.4));
-}
+} */
 
 /* Botón flotante de WhatsApp */
 .whatsapp-float {
@@ -85,4 +86,24 @@ body {
 .whatsapp-float svg {
   width: 32px;
   height: 32px;
+}
+
+.vertical-line-list {
+  position: relative;
+}
+
+.vertical-line-list .tab:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 45px;
+  top: 100%;
+  width: 2px;
+  height: 32px;
+  background: #67D644;
+  z-index: 0;
+}
+
+.vertical-line-list .tab {
+  position: relative;
+  z-index: 1;
 }
