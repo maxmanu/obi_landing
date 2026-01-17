@@ -245,13 +245,19 @@
           <p class="pt-8 text-gray-400 text-sm">© 2026 Obi Consulting. Todos los derechos reservados.</p>
         </div>
         <div>
-          <h5 class="font-bold  text-white mb-6">Nosotros</h5>
+          <a href="#hero-section">
+            <h5 class="font-bold  text-white mb-6">Nosotros</h5>
+          </a>
         </div>
         <div>
-          <h5 class="font-bold  text-white mb-6">Innovación</h5>
+          <a href="#services-section">
+            <h5 class=" font-bold text-white mb-6">Innovación</h5>
+          </a>
         </div>
         <div>
-          <h5 class="font-bold text-white mb-6">Soluciones Digitales</h5>
+          <a href="#solutions-section">
+            <h5 class="font-bold text-white mb-6">Soluciones Digitales</h5>
+          </a>
           <ul class="space-y-4 text-gray-500 text-sm">
             <li><a class="hover:text-primary transition-colors" href="#solutions-section">Desarrollo Personalizado</a></li>
             <li><a class="hover:text-primary transition-colors" href="#solutions-section">Sitios Web e E-commerce</a></li>
@@ -260,7 +266,9 @@
           </ul>
         </div>
         <div>
-          <h5 class="font-bold text-white mb-6">Clientes</h5>
+          <a href="#clients-section">
+            <h5 class="font-bold text-white mb-6">Clientes</h5>
+          </a>
         </div>
       </div>
     </div>
