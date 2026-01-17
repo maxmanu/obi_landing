@@ -1,3 +1,88 @@
 body {
   font-family: 'Manrope', sans-serif;
 }
+
+.bg-icon {
+  background: #67D644;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.bg-icon-active {
+  padding: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* Carousel de logos */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% / 4));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Efecto de desvanecimiento en las esquinas */
+.carousel-fade::before,
+.carousel-fade::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.carousel-fade::before {
+  left: 0;
+  background: linear-gradient(to left, rgb(166 255 139 / 0.1), rgb(166 255 139 / 0.4));
+}
+
+.carousel-fade::after {
+  right: 0;
+  background: linear-gradient(to right, rgb(166 255 139 / 0.1), rgb(166 255 139 / 0.4));
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background: #128C7E;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
+}
