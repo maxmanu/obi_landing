@@ -107,3 +107,30 @@ body {
   position: relative;
   z-index: 1;
 }
+
+.bg-square {
+  position: absolute;
+  top: 6%;
+  right: 10%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.bg-square--solutions {
+  top: 20%;
+  right: 18%;
+}
+
+@media (max-width: 1024px) {
+  .bg-square {
+    bottom: 6%;
+    right: 0;
+    top: inherit;
+  }
+
+  .bg-square--solutions {
+    bottom: 2%;
+    right: 0;
+    top: inherit;
+  }
+}

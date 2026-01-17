@@ -54,7 +54,7 @@
         <a class="text-lg font-semibold hover:text-primary transition-colors" href="#hero-section">Nosotros</a>
         <a class="text-lg font-semibold hover:text-primary transition-colors" href="#services-section">Servicios</a>
         <a class="text-lg font-semibold hover:text-primary transition-colors" href="#clients-section">Clientes</a>
-        <a class="text-lg font-semibold hover:text-primary transition-colors" href="https://wa.me/51958624548?text=Hola%20estoy%20interesado%20en%20sus%20servicios" target="_blank">Contáctanos</a>
+        <a class="text-lg font-semibold hover:text-primary transition-colors" href="https://wa.me/51958624548?text=Hola.%20Me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n%20para%20realizar%20un%20diagn%C3%B3stico%20digital%20de%20mi%20empresa.%20%C2%BFC%C3%B3mo%20podemos%20empezar%3F" target="_blank">Contáctanos</a>
       </nav>
       <button id="menuToggle" class="md:hidden p-2">
         <span class="material-symbols-outlined">menu</span>
@@ -66,13 +66,14 @@
         <a class="text-lg font-semibold hover:text-primary transition-colors py-2" href="#hero-section">Nosotros</a>
         <a class="text-lg font-semibold hover:text-primary transition-colors py-2" href="#services-section">Servicios</a>
         <a class="text-lg font-semibold hover:text-primary transition-colors py-2" href="#clients-section">Clientes</a>
-        <a class="text-lg font-semibold hover:text-primary transition-colors py-2" href="https://wa.me/51958624548?text=Hola%20estoy%20interesado%20en%20sus%20servicios" target="_blank">Contáctanos</a>
+        <a class="text-lg font-semibold hover:text-primary transition-colors py-2" href="https://wa.me/51958624548?text=Hola.%20Me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n%20para%20realizar%20un%20diagn%C3%B3stico%20digital%20de%20mi%20empresa.%20%C2%BFC%C3%B3mo%20podemos%20empezar%3F" target="_blank">Contáctanos</a>
       </div>
     </nav>
   </header>
   <main class="flex flex-col">
     <!-- Hero Section -->
     <section id="hero-section" class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-40">
+      <img class="bg-square" src="assets/img/square_bg.svg" alt="banner-hero">
       <div class="container mx-auto px-6 lg:px-10">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div class="flex flex-col gap-8 z-10">
@@ -85,7 +86,7 @@
             </p>
             <p class="text-lg lg:text-xl dark:text-gray-400 leading-relaxed lg:max-w-xl text-justify">Nuestro compromiso es asegurar que cada inversión en tecnología esté validada y genere un impacto real en su crecimiento.</p>
             <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-              <a href="https://wa.me/51958624548?text=Hola%20estoy%20interesado%20en%20sus%20servicios" target="_blank" class="h-14 px-8 bg-primary text-white rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all flex items-center gap-2">
+              <a href="https://wa.me/51958624548?text=Hola.%20Me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n%20para%20realizar%20un%20diagn%C3%B3stico%20digital%20de%20mi%20empresa.%20%C2%BFC%C3%B3mo%20podemos%20empezar%3F" target="_blank" class="h-14 px-8 bg-primary text-white rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/30 transition-all flex items-center gap-2">
                 Contáctanos aquí
                 <span class="material-symbols-outlined">arrow_forward</span>
               </a>
@@ -125,7 +126,8 @@
       </div>
     </section>
     <!-- Recent Case Studies -->
-    <section id="solutions-section" class="py-24 dark:bg-gray-900/50">
+    <section id="solutions-section" class="relative py-24 dark:bg-gray-900/50">
+      <img class="bg-square bg-square--solutions" src="assets/img/square_bg.svg" alt="banner-hero">
       <div class="container mx-auto px-6 lg:px-10">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
@@ -229,8 +231,6 @@
           <div class="flex items-center gap-3 mb-6">
             <img class="w-32 max-w-full h-auto" src="assets/img/logo_obi_footer.svg" alt="logo">
           </div>
-          <p class="text-white max-w-xs mb-6">Dirección: Av. Caminos del Inka <br />
-            Cel. 97504678</p>
           <div class="flex gap-4">
             <a href="https://www.facebook.com/obiconsulting/" rel="noopener noreferrer" target="_blank" class="size-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-white hover:text-primary hover:border-primary transition-all">
               <img src="assets/img/facebook-icon.svg" alt="">
@@ -238,9 +238,9 @@
             <a href="https://www.instagram.com/obiconsulting/" rel="noopener noreferrer" target="_blank" class="size-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-white hover:text-primary hover:border-primary transition-all">
               <img src="assets/img/instagram-icon.svg" alt="">
             </a>
-            <!-- <a href="https://www.linkedin.com/company/obi_consulting/" rel="noopener noreferrer" target="_blank" class="size-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-white hover:text-primary hover:border-primary transition-all">
+            <a href="https://www.linkedin.com/company/obi_consulting/" rel="noopener noreferrer" target="_blank" class="size-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center text-white hover:text-primary hover:border-primary transition-all">
               <img src="assets/img/linkedin-icon.svg" alt="">
-            </a> -->
+            </a>
           </div>
           <p class="pt-8 text-gray-400 text-sm">© 2026 Obi Consulting. Todos los derechos reservados.</p>
         </div>
@@ -266,7 +266,7 @@
     </div>
   </footer>
   <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/51958624548?text=Hola%20estoy%20interesado%20en%20sus%20servicios" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/51958624548?text=Hola.%20Me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n%20para%20realizar%20un%20diagn%C3%B3stico%20digital%20de%20mi%20empresa.%20%C2%BFC%C3%B3mo%20podemos%20empezar%3F" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-8 h-8">
       <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
     </svg>
