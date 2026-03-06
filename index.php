@@ -5,8 +5,8 @@
   <div class="container hero-content">
     <div class="row">
       <div class="col-12 col-md-6">
-        <span class="decor-text btn-lg mt-2">CATÁLOGO</span>
-        <h1 class="hero-title">REVESTIMIENTO CERÁMICOS</h1>
+        <span class="decor-text btn-lg">CATÁLOGO</span>
+        <h1 class="hero-title mt-3">REVESTIMIENTO CERÁMICOS</h1>
         <p class="hero-description">Elegancia atemporal plasmada en piedra. Explore nuestra cuidada selección de acabados de mármol premium.</p>
       </div>
     </div>

@@ -25,8 +25,8 @@
     </div>
     <div class="bar-info">
       <div class="marquee-wrap">
-        <span class="marquee-item">SERVICIOS DE MANTENIMIENTO E INSTALACIÓN +51 985 256 912 | CONOCE MÁS <a href="" rel="noopener noreferrer" class="btn-economica ms-2">INGRESA AQUÍ</a></span>
-        <span class="marquee-item">SERVICIOS DE MANTENIMIENTO E INSTALACIÓN +51 985 256 912 | CONOCE MÁS <a href="" rel="noopener noreferrer" class="btn-economica ms-2">INGRESA AQUÍ</a></span>
+        <span class="marquee-item">SERVICIOS DE MANTENIMIENTO E INSTALACIÓN <i class="bi bi-whatsapp ms-2"></i> +51 985 256 912 &nbsp; | &nbsp;CONOCE MÁS</span>
+        <span class="marquee-item">SERVICIOS DE MANTENIMIENTO E INSTALACIÓN <i class="bi bi-whatsapp ms-2"></i> +51 985 256 912 &nbsp; | &nbsp;CONOCE MÁS</span>
       </div>
     </div>
   </header>
