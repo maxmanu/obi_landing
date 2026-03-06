@@ -310,6 +310,7 @@
 .badge-nuevo {
   background-color: #231F20;
   color: #fff;
+  width: fit-content;
 }
 
 .badge-descuento {

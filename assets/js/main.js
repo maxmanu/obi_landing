@@ -622,10 +622,11 @@ function actualizarDisponibilidadFiltros() {
     const grupo = cb.dataset.filter;
     const valor = cb.value;
 
-    // Simulamos agregar esta opción a los filtros actuales del grupo
+    // Simulamos activar SOLO esta opción en su grupo (OR dentro del grupo),
+    // para verificar si añadiría productos nuevos dados los demás filtros activos.
     const filtrosSimulados = {
       ...f,
-      [grupo]: [...f[grupo], valor],
+      [grupo]: [valor],
     };
 
     const resultados = PRODUCTOS.filter((p) => {
