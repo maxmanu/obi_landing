@@ -165,7 +165,7 @@ body {
   border-radius: 20px;
   font-size: .75rem;
   color: #888;
-  padding: .2rem .75rem;
+  padding: .2rem .75rem 0;
   cursor: pointer;
   margin-bottom: .75rem;
   transition: all .2s;
@@ -310,6 +310,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  color: var(--primary-color);
 
   &:hover {
     box-shadow: 0 8px 28px rgba(0, 0, 0, .12);
@@ -320,7 +321,6 @@ body {
     font-size: .65rem;
     font-weight: 600;
     letter-spacing: .05em;
-    color: #999;
     text-align: center;
     padding: .6rem .5rem .1rem;
   }
@@ -339,9 +339,8 @@ body {
 
 .badge-producto {
   display: inline-block;
-  font-size: .75rem;
-  font-weight: 800;
-  letter-spacing: .06em;
+  font-size: .85rem;
+  font-weight: 500;
   padding: .28rem .6rem;
   border-radius: 4px;
   line-height: 1;
@@ -352,11 +351,13 @@ body {
   background-color: #231F20;
   color: #fff;
   width: fit-content;
+  padding: 4px 7px 1px;
 }
 
 .badge-descuento {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  padding: 4px 7px 1px;
 }
 
 .producto-nombre {
@@ -399,7 +400,6 @@ body {
 
 .producto-tipo {
   font-size: .78rem;
-  color: #222;
   text-transform: uppercase;
   margin: 0;
   line-height: 1.4;
@@ -411,7 +411,6 @@ body {
 
 .producto-caja {
   font-size: .73rem;
-  color: #555;
   text-transform: uppercase;
   margin: 0;
 }
@@ -426,7 +425,6 @@ body {
 
 .producto-atributos {
   font-size: .68rem;
-  color: #777;
   text-transform: uppercase;
   letter-spacing: .03em;
   margin: 0 0 .5rem;
@@ -449,12 +447,7 @@ body {
   border-radius: 6px;
   padding: .5rem .25rem;
   text-decoration: none;
-  transition: background-color .2s;
-
-  &:hover {
-    background-color: #003575;
-    color: #fff;
-  }
+  pointer-events: none;
 }
 
 .btn-cotizar {
