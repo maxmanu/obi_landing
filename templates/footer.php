@@ -2,16 +2,20 @@
 
 <!-- Lightbox galería de producto -->
 <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Galería de producto">
-  <button class="lightbox-cerrar" id="lightbox-cerrar" aria-label="Cerrar">&times;</button>
-  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Anterior">&#8249;</button>
-  <div class="lightbox-contenido">
+  <div class="lightbox-contenido position-relative">
+    <button class="lightbox-cerrar" id="lightbox-cerrar" aria-label="Cerrar">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Anterior">&#8249;</button>
+    <div class="text-center">
+      <span class="sku" id="lightbox-sku"></span>
+      <p id="lightbox-nombre" class="mb-0"></p>
+    </div>
     <div class="lightbox-img-wrap">
       <img id="lightbox-img" src="" alt="" />
     </div>
     <div id="lightbox-thumbs" class="lightbox-thumbs"></div>
     <p id="lightbox-counter" class="lightbox-counter"></p>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Siguiente">&#8250;</button>
   </div>
-  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Siguiente">&#8250;</button>
 </div>
 <div id="lightbox-backdrop" class="lightbox-backdrop"></div>
 

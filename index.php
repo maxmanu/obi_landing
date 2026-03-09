@@ -4,7 +4,7 @@
   <div class="hero-overlay"></div>
   <div class="container hero-content">
     <div class="row">
-      <div class="col-12 col-md-6">
+      <div class="col-8 col-md-6">
         <span class="decor-text btn-lg">CATÁLOGO</span>
         <h1 class="hero-title mt-3">REVESTIMIENTO CERÁMICOS</h1>
         <p class="hero-description">Elegancia atemporal plasmada en piedra. Explore nuestra cuidada selección de acabados de mármol premium.</p>
@@ -72,12 +72,12 @@
                     <div class="precio-rango">
                       <div class="precio-input-grupo">
                         <label for="precio-desde">Desde</label>
-                        <input type="number" id="precio-desde" class="form-control precio-input" placeholder="$ 0" min="0" step="100" />
+                        <input type="number" id="precio-desde" class="form-control precio-input" placeholder="S/. 0" min="0" step="100" />
                       </div>
                       <span class="precio-separador">—</span>
                       <div class="precio-input-grupo">
                         <label for="precio-hasta">Hasta</label>
-                        <input type="number" id="precio-hasta" class="form-control precio-input" placeholder="$ 99999" min="0" step="100" />
+                        <input type="number" id="precio-hasta" class="form-control precio-input" placeholder="S/. 99999" min="0" step="100" />
                       </div>
                     </div>
                   </div>
@@ -205,7 +205,7 @@
           </select>
         </div>
 
-        <div id="grilla-productos" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div id="grilla-productos" class="row row-cols-2 row-cols-lg-3 g-4">
           <!-- Renderizado por JS -->
         </div>
 

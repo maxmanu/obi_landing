@@ -463,7 +463,7 @@ const PRODUCTOS = [
   },
 ];
 
-const POR_PAGINA = 9;
+const POR_PAGINA = () => (window.innerWidth < 768 ? 8 : 9);
 let paginaActual = 1;
 
 // ---- Lectura de filtros activos ----
@@ -505,7 +505,7 @@ function applySort(productos) {
 
 // ---- Helpers ----
 function formatPrecio(n) {
-  return '$ ' + n.toLocaleString('es-AR');
+  return 'S/. ' + n.toLocaleString('es-AR');
 }
 
 function capitalize(str) {
@@ -520,7 +520,7 @@ function whatsappUrl(p) {
     `📦 *${p.nombre}*\n` +
     `🔖 Cód: ${p.sku}\n` +
     `📐 ${p.categoria.charAt(0).toUpperCase() + p.categoria.slice(1)} ${p.tipo} – ${medidaLabel}\n` +
-    `🏷️ Precio x caja: $${p.precio.toLocaleString('es-AR')}\n` +
+    `🏷️ Precio x caja: S/. ${p.precio.toLocaleString('es-AR')}\n` +
     `📏 Caja: ${p.piezas} piezas – ${p.m2caja} m² | ${p.marca}\n` +
     `✨ Acabado ${p.acabado} | Superficie ${p.superficie} | Tránsito ${p.transito}\n\n` +
     `¿Podrían brindarme más información?`;
@@ -537,17 +537,17 @@ function renderTarjeta(p) {
       <div class="producto-card">
         <span class="sku">COD ${p.sku}</span>
         <h6 class="producto-nombre">${p.nombre}</h6>
-        <div class="producto-img-wrap lightbox-trigger" data-imgs="${imgs}" data-nombre="${p.nombre}" title="Ver fotos" style="cursor:zoom-in">
+        <div class="producto-img-wrap lightbox-trigger" data-imgs="${imgs}" data-nombre="${p.nombre}" data-sku="${p.sku}" title="Ver fotos" style="cursor:zoom-in">
           ${p.nuevo || p.descuento ? `<div class="producto-badges">${p.nuevo ? '<span class="badge-producto badge-nuevo">NUEVO</span>' : ''}${p.descuento ? `<span class="badge-producto badge-descuento">${p.descuento}% DSCTO</span>` : ''}</div>` : ''}
           <img src="${p.img}" alt="${p.nombre}" class="img-fluid" loading="lazy" />
         </div>
         <div class="producto-info">
           <p class="producto-tipo"><strong>${categoriaUp} ${p.tipo}</strong> ${medidaLabel}</p>
           <p class="producto-caja">CAJA CON ${p.piezas} PIEZAS &ndash; ${p.m2caja} M2* | ${p.marca}</p>
-          <p class="producto-precio-caja">*PRECIO X CAJA &ndash; $ ${p.precio.toLocaleString('es-AR')}</p>
+          <p class="producto-precio-caja">*PRECIO X CAJA &ndash; S/. ${p.precio.toLocaleString('es-AR')}</p>
           <p class="producto-atributos">ACABADO ${p.acabado.toUpperCase()} | SUPERFICIE ${p.superficie} | TRÁNSITO ${p.transito.toUpperCase()}</p>
           <div class="producto-btns">
-            <a href="#" class="btn btn-precio-m2">$ ${p.precioM2.toLocaleString('es-AR')} x m²</a>
+            <a href="#" class="btn btn-precio-m2">S/. ${p.precioM2.toLocaleString('es-AR')} x m²</a>
             <a href="${whatsappUrl(p)}" target="_blank" rel="noopener noreferrer" class="btn btn-cotizar">COTIZAR</a>
           </div>
         </div>
@@ -557,7 +557,7 @@ function renderTarjeta(p) {
 
 // ---- Render paginación ----
 function renderPaginacion(total, pagina) {
-  const totalPags = Math.max(1, Math.ceil(total / POR_PAGINA));
+  const totalPags = Math.max(1, Math.ceil(total / POR_PAGINA()));
   document.getElementById('pag-info').textContent = `PÁGINA ${pagina} DE ${totalPags}`;
   document.getElementById('pag-prev').classList.toggle('disabled', pagina === 1);
   document.getElementById('pag-next').classList.toggle('disabled', pagina >= totalPags);
@@ -568,12 +568,12 @@ function render() {
   const filtrados = applyFilters(PRODUCTOS);
   const ordenados = applySort(filtrados);
   const total = ordenados.length;
-  const totalPags = Math.max(1, Math.ceil(total / POR_PAGINA));
+  const totalPags = Math.max(1, Math.ceil(total / POR_PAGINA()));
 
   if (paginaActual > totalPags) paginaActual = totalPags;
 
-  const inicio = (paginaActual - 1) * POR_PAGINA;
-  const pagina = ordenados.slice(inicio, inicio + POR_PAGINA);
+  const inicio = (paginaActual - 1) * POR_PAGINA();
+  const pagina = ordenados.slice(inicio, inicio + POR_PAGINA());
   const grilla = document.getElementById('grilla-productos');
 
   document.getElementById('resultados-count').textContent = total;
@@ -712,7 +712,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('pag-next').addEventListener('click', (e) => {
     e.preventDefault();
     const total = applyFilters(PRODUCTOS).length;
-    const totalPags = Math.ceil(total / POR_PAGINA);
+    const totalPags = Math.ceil(total / POR_PAGINA());
     if (paginaActual < totalPags) {
       paginaActual++;
       render();
@@ -732,6 +732,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const lbCerrar = document.getElementById('lightbox-cerrar');
   const lbPrev = document.getElementById('lightbox-prev');
   const lbNext = document.getElementById('lightbox-next');
+  const lbNombre = document.getElementById('lightbox-nombre');
+  const lbSku = document.getElementById('lightbox-sku');
 
   let lbImgs = [];
   let lbIndex = 0;
@@ -745,7 +747,9 @@ document.addEventListener('DOMContentLoaded', () => {
     lbNext.style.display = lbImgs.length > 1 ? '' : 'none';
   }
 
-  function lbAbrir(imgs, index = 0) {
+  function lbAbrir(imgs, index = 0, nombre = '', sku = '') {
+    lbNombre.textContent = nombre;
+    lbSku.textContent = sku ? `COD ${sku}` : '';
     lbImgs = imgs;
     // Miniaturas
     lbThumbs.innerHTML =
@@ -779,7 +783,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const trigger = e.target.closest('.lightbox-trigger');
     if (!trigger) return;
     const imgs = JSON.parse(trigger.dataset.imgs);
-    lbAbrir(imgs, 0);
+    const nombre = trigger.dataset.nombre || '';
+    const sku = trigger.dataset.sku || '';
+    lbAbrir(imgs, 0, nombre, sku);
   });
 
   lbCerrar.addEventListener('click', lbCerrarFn);
